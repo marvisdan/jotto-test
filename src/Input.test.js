@@ -45,8 +45,8 @@ describe('render', ()=> {
       wrapper = setup(initialState);
     });
     test('render component without error', () => {
-        const textMessage = findByTestAttr(wrapper, 'text-message');
-        expect(textMessage.length).toBe(1);
+      const component = findByTestAttr(wrapper, 'component-input');
+      expect(component.length).toBe(1);
     });
     test('render not input box', () => {
       const inputBox = findByTestAttr(wrapper, 'input-box');

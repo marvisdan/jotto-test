@@ -5,11 +5,7 @@ import { connect } from 'react-redux';
 class Input extends Component {
   render() {
     const {success} = this.props;
-    const contents = success ? (
-      <span data-test="text-message">
-        You have guess the word !!
-      </span>
-    ) : (
+    const contents = success ? null : (
       <form className="form-inline">
         <input id="word-guess"
           data-test="input-box"
